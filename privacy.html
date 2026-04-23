@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy - Jordan Steinke</title>
+<style>
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/Iosevka/11.1.1/iosevka/iosevka.min.css');
+
+  :root {
+    --base03:  #002b36;
+    --base02:  #073642;
+    --base01:  #586e75;
+    --base00:  #657b83;
+    --base0:   #839496;
+    --base1:   #93a1a1;
+    --base2:   #eee8d5;
+    --base3:   #fdf6e3;
+    --blue:    #268bd2;
+    --cyan:    #2aa198;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Iosevka Web', monospace;
+    background: var(--base3);
+    color: var(--base00);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .page {
+    max-width: 480px;
+    width: 100%;
+  }
+
+  .panel {
+    position: relative;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--base1);
+  }
+
+  .panel-label {
+    position: absolute;
+    top: -0.65em;
+    left: 1rem;
+    background: var(--base3);
+    padding: 0 0.4rem;
+    color: var(--cyan);
+    font-size: 0.85rem;
+  }
+
+  p {
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  a {
+    color: var(--blue);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--cyan);
+  }
+
+  footer {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    text-align: center;
+    color: var(--base1);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --base01:  #93a1a1;
+      --base00:  #839496;
+      --base0:   #657b83;
+      --base1:   #586e75;
+      --base2:   #073642;
+      --base3:   #002b36;
+    }
+  }
+
+  @media (max-width: 480px) {
+    body { padding: 1rem; }
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+
+    <div class="panel">
+      <span class="panel-label">privacy</span>
+      <p>This site does not collect, store, or process any personal data.</p>
+      <p>This site loads resources from third-party services that may receive your IP address and browser information when your browser requests them:</p>
+      <p><strong>Cloudflare</strong> (cloudflare.com) hosts this site and serves the web font. Their privacy policy is available at <a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a>.</p>
+      <p><strong>Libravatar</strong> (libravatar.org) serves the avatar image. Their privacy policy is available at <a href="https://www.libravatar.org/privacy/">libravatar.org/privacy</a>.</p>
+    </div>
+
+    <footer>
+      <a href="index.html">&larr; back</a>
+    </footer>
+
+  </div>
+</body>
+</html>
